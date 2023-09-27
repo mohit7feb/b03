@@ -269,13 +269,10 @@
         click_login_submit.addEventListener('click', function() {
             if (username.value == '' && passwordField.value == '') {
                 popupBox.style.display = 'flex';
-                popupBoxMsg.innerText = 'please fill email id and password';
+                popupBoxMsg.innerText = 'please fill username and password';
             } else if (username.value == '') {
                 popupBox.style.display = 'flex';
-                popupBoxMsg.innerText = 'please fill email';
-            } else if (!username.value.match(validRegex)) {
-                popupBox.style.display = 'flex';
-                popupBoxMsg.innerText = 'please fill valid email';
+                popupBoxMsg.innerText = 'please fill username';
             } else if (passwordField.value == '') {
                 popupBox.style.display = 'flex';
                 popupBoxMsg.innerText = 'please fill Password';
